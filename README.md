@@ -14,7 +14,7 @@
 
 | Course | Description |
 |--------|-------------|
-| [Pengenalan Data](https://github.com/fadhilhaka/Basic-Data-Visualization/tree/main/introduction) | Intro to Machine Learning |
+| [Pengenalan Machine Learning](https://github.com/fadhilhaka/Basic-Data-Visualization/tree/main/introduction) | Intro to Machine Learning |
 
 ## Intention
 
