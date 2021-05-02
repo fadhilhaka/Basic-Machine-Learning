@@ -17,6 +17,8 @@
 | [Pengenalan Machine Learning](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/introduction) | Intro to Machine Learning |
 | [Pengenalan Data](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/intro-to-data) | Intro to Data |
 | [Pengolahan Data](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/data-processing) | Data Preparation and Evaluation |
+| [Supervised Learning](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/supervised-learning-classification) | Supervised Learning: Classification |
+<!-- | [Supervised Learning](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/supervised-learning-regression) | Supervised Learning: Regression | -->
 
 ## Intention
 
