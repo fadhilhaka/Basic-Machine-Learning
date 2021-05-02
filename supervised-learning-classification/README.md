@@ -76,4 +76,8 @@ Sebuah pohon keputusan dapat dibuat dari data sebelumnya. Perhatikan contoh poho
 
 [Konversi dot file ke dalam file png untuk melihat visualisasi decision tree](https://onlineconvertfree.com/converter/images/)
 
+[Latihan SKLearn Decision Tree](https://jp-tok.dataplatform.cloud.ibm.com/analytics/notebooks/v2/f249deb9-6028-4c9f-9524-77439ee599c0?projectid=f052c4d4-84ba-485b-8bd0-827f0b83f55f&context=cpdaas)
+
 [Decision Tree](https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052)
+
+[Find all files in a directory with extension](https://stackoverflow.com/questions/3964681/find-all-files-in-a-directory-with-extension-txt-in-python)
