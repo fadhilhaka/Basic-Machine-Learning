@@ -106,6 +106,12 @@ Misal, kita ingin membangun sebuah sistem pengenalan suara. Menurut Geron [[2]](
 
 Pertanyaannya, dapatkah hal ini kita terapkan pada ribuan jenis kata, yang diucapkan oleh jutaan orang, dalam berbagai macam bahasa, di lingkungan yang mungkin terdistraksi oleh suara-suara lainnya? Sangat rumit, bukan? Maka solusi terbaik yang dapat kita lakukan saat ini adalah, membuat algoritma yang dapat belajar dengan sendirinya melalui banyak data berupa sampel rekaman untuk setiap kata.
 
+### Recommendation 
+
+Rekomendasi atau sistem rekomendasi adalah salah satu implementasi machine learning yang kita pakai hampir setiap hari. Contohnya pada saat kita belanja daring, terdapat jutaan pilihan produk pada platform tersebut. Akan membuang banyak waktu jika kita harus melihat semua opsi tersebut. Sistem rekomendasi memiliki peran penting untuk membantu kita menemukan produk yang benar-benar kita cari.
+
+Selain pada platform belanja daring, sistem rekomendasi juga hadir dalam aplikasi yang kita pakai sehari-hari seperti Youtube dan Spotify yang merekomendasikan video dan lagu yang menarik perhatian kita. Netflix merekomendasikan film yang mungkin cocok dengan selera Anda. Twitter merekomendasikan pengguna yang mungkin ingin Anda ikuti.
+
 ## Jenis-jenis Machine Learning
 
 ### Supervised Learning

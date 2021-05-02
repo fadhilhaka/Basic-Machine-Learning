@@ -3,8 +3,8 @@ import pandas as pd
 
 from pathlib import Path
 
-path = Path().absolute()
-filePath = path/'Basic Machine Learning/supervised-learning-classification/exercise/Iris.csv'
+# path = Path().absolute()
+filePath = '/Users/fadhilhanri/Documents/Challenge/Basic Machine Learning/unsupervised-learning-clustering/exercise/Iris.csv'
 
 iris = pd.read_csv(filePath)
 

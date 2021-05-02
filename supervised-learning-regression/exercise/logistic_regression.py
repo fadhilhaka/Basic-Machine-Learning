@@ -2,8 +2,8 @@ import pandas as pd
 
 from pathlib import Path
 
-path = Path().absolute()
-filePath = path/'Social_Network_Ads.csv'
+# path = Path().absolute()
+filePath = '/Users/fadhilhanri/Documents/Challenge/Basic Machine Learning/unsupervised-learning-clustering/exercise/Social_Network_Ads.csv'
 
 df = pd.read_csv(filePath)
 # print(df.head())
