@@ -23,6 +23,7 @@
 | [Supervised Learning, part two](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/supervised-learning-regression) | Supervised Learning: Regression |
 | [Unsupervised Learning](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/unsupervised-learning-clustering) | Unsupervised Learning: Clustering |
 | [Dimensionality Reduction](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/dimentionality-reduction) | Dimensionality Reduction |
+| [Support Vector Machine](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/support-vector-machine) | Support Vector Machine |
 
 ## Intention
 
