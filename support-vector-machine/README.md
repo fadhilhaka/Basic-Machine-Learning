@@ -96,3 +96,49 @@ Sebagai contoh, jika ada 3 buah kelas: donat, ayam, dan burger, SVM akan melakuk
 Kemudian membangun pemisah antara kelas ayam dan kelas bukan ayam, lalu pemisah antara kelas burger dan bukan kelas burger. Teknik inilah yang disebut dengan “One-vs-Rest”.
 
 ![](https://lh4.googleusercontent.com/-d0sDyan39BiofAC7ojoa3B-4K8Uxr11vAvIrBWskj_g27twVuGixg66Idwnzs8bGFSEHE4mnhOCIFz3zNIuPUlsYGbOVnbMnoAxQWO_IxO_93Kj-IndKOp1_VHrk1PCuWE9c5Ak)
+
+[Dataset Pima Indian Diabetes](https://www.kaggle.com/uciml/pima-indians-diabetes-database)
+
+[Memisahkan kolom-kolom pada dataframe](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html)
+
+## Support Vector Regression
+
+Support Vector Regression (SVR) menggunakan prinsip yang sama dengan SVM pada kasus klasifikasi. Perbedaannya adalah jika pada kasus klasifikasi, SVM berusaha mencari ‘jalan’ terbesar yang bisa memisahkan sampel-sampel dari kelas berbeda, maka pada kasus regresi SVR berusaha mencari jalan yang dapat menampung sebanyak mungkin sampel di ‘jalan’.
+
+![](https://lh5.googleusercontent.com/5OYp_CIu7on-QJCH39VvRHs1hYTHnnoX6b2Y3Jp48kRYR5G9Q4terHU1ywGqlOb0DoTSYnAQvS_SmUKC4tj80KApp3WYsZ6QlX6DkqdPp_XkAFMe1_BDGQUYZUraY7ouEaVcxd9q)
+
+Seperti dijelaskan oleh Garon dalam Hands-On Machine Learning with Scikit Learn [[4]](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/reference), gambar di atas menunjukkan dua model Regresi SVM linier yang dilatih pada beberapa data linier acak, satu dengan margin besar (ϵ = 1,5) dan yang lainnya dengan margin kecil (ϵ = 0,5). Lebar jalan dikontrol oleh hyperparameter ϵ, yang juga disebut maksimum eror. Menambahkan data training ke dalam margin tidak akan mempengaruhi prediksi model. Oleh karena itu, model disebut sebagai ϵ-insensitivity (tidak sensitif-ϵ).
+
+Berbeda dengan SVM di mana support vector adalah 2 sampel dari 2 kelas berbeda yang memiliki jarak paling dekat, pada SVR support vector adalah sampel yang menjadi pembatas jalan yang dapat menampung seluruh sampel pada data. M. Awad dan R. Khanna dalam bab 4 bukunya [[14]](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/reference) mengilustrasikan support vector pada SVR sebagai berikut.
+
+![](https://lh6.googleusercontent.com/gwFeCNov7CQ16aLYkHRFgRsenRTbkqE1u8N7QPoQraRQtig6SUUc1n9byEr1IShy_qbnYjIOEGFkWkskdDUlbW1aBTNlKFqjFUMa2V1ajl7dbjJKZvIX0SKJaUykoAAAYznOAkJ9)
+
+Mari kita ambil contoh implementasi SVR pada kasus prediksi harga rumah di kota Boston, Amerika Serikat, menggunakan dataset yang sangat populer untuk kasus regresi: “Boston Housing Price.csv”. Pertama, kita akan melihat bagaimana hasil prediksi regresi linear sederhana pada data ini, kemudian kita akan membandingkan hasilnya dengan SVR.
+
+Sedikit mengingat kembali tentang regresi linear yang telah diulas di modul sebelumnya, ukuran performa untuk permasalahan regresi linear adalah Root Mean Square Error (RMSE). RMSE memberi gambaran tentang seberapa banyak kesalahan dalam prediksi yang dibuat oleh sistem. Tujuannya tentu saja untuk mendapatkan eror atau tingkat kesalahan seminimal mungkin. 
+
+Pada kasus prediksi harga rumah di Boston, regresi linear akan memberikan hasil plot sebagai berikut.
+
+![](https://lh4.googleusercontent.com/aGzGxTe9YYEbDJGMJCa6Bp0L35SE4-0Q4xg3k0fhIaRjW-EgpNQ0vfemD3lGZsREGjAYXVBrkxd291UXs-0R38kRvonrNgZg0gLRQLWecdfIsfvb4cKEOFo9wtc4fpQs21djBx9F)
+
+Mari kita coba implementasikan SVR pada dataset yang sama. Salah satu kelebihan SVR dibanding regresi linear adalah SVR memberi kita fleksibilitas untuk menentukan seberapa banyak kesalahan yang dapat diterima dalam model kita. Algoritma SVR akan menemukan garis yang cocok (hyperplane) agar sesuai dengan data. Kita bisa mengatur parameter ϵ untuk mendapatkan akurasi model yang kita inginkan. 
+
+![](https://lh6.googleusercontent.com/zxm4lbAhCw4ZWoSjiakEUKLr5pG3DnrGssDfVGo20lnJGYJ4i4dgucgi3dIpGeeWLYkWOGtKZrwf7wrnQv4IYRv8YhiMyiwheeQa3mcEVqi_Zil7TyyxU8JXHn7TzP_QJvNT6q8H)
+
+Garis merah pada gambar menunjukkan garis regresi, sedangkan garis biru menunjukkan margin dari eror, ϵ, yang telah kita atur nilainya tadi dengan ϵ = 5 (atau dalam skala ribuan berarti senilai $ 5,000). 
+
+Dari gambar di atas Anda mungkin bisa langsung melihat bahwa algoritma SVR ini tidak bisa memberikan hasil prediksi yang baik untuk seluruh data sebab beberapa titik masih berada di luar batas. Oleh karena itu, kita perlu menambahkan parameter lain pada algoritma yaitu parameter C yang disebut sebagai regularization parameter atau parameter keteraturan. Ada juga yang menyebutnya slack parameter. Jui Yang Hsia dan Chih-Jen Lin dalam tulisannya [[15]](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/reference) menyatakan bahwa regularization parameter ini berfungsi untuk menghindari overfitting pada training data. 
+
+Kembali pada kasus prediksi rumah di Boston, mari kita coba tambahkan parameter C pada data. Jika kita set nilai C = 2.0, lantas hasilnya adalah sebagai berikut.
+
+![](https://lh6.googleusercontent.com/mITQaHcwg4ufqQbloMhZCoLKTetdykEr-nW98JeOGpEAnHSXE0UtlmBtg8k0lJqo6mpV3mcGMkgg-ypW2S4Dum3dEMObsySOqM4eNASe5GV9reHxQWSc5ebfsy-iOoIbYT664xZu)
+
+Perhatikan bahwa sekarang model kita menyesuaikan sebaran data dengan lebih baik dibanding model sebelumnya. 
+
+Ada dua parameter yang kita gunakan dalam model SVR, yaitu parameter ϵ yang menunjukkan margin of error dan parameter C yang merupakan parameter keteraturan atau regularization parameter.
+
+Ada tiga jenis implementasi Support Vector Regression pada scikit-learn yaitu: [SVR](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html#sklearn.svm.SVR), [NuSVR](https://scikit-learn.org/stable/modules/generated/sklearn.svm.NuSVR.html#sklearn.svm.NuSVR), dan [LinearSVR](https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVR.html#sklearn.svm.LinearSVR).
+
+Implementasi dari LinearSVR lebih cepat dari SVR tetapi hanya dapat digunakan untuk kernel linear. NuSVR menggunakan parameter nu untuk mengontrol jumlah support vector.
+
+[Dataset lama kerja seseorang dan gajinya](https://www.kaggle.com/karthickveerakumar/salary-data-simple-linear-regression)
