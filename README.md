@@ -24,6 +24,7 @@
 | [Unsupervised Learning](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/unsupervised-learning-clustering) | Unsupervised Learning: Clustering |
 | [Dimensionality Reduction](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/dimentionality-reduction) | Dimensionality Reduction |
 | [Support Vector Machine](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/support-vector-machine) | Support Vector Machine |
+| [Machine Learning Basics](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/machine-learning-basics) | Machine Learning Basics |
 
 ## Intention
 
