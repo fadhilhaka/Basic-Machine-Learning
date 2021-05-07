@@ -25,6 +25,7 @@
 | [Dimensionality Reduction](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/dimentionality-reduction) | Dimensionality Reduction |
 | [Support Vector Machine](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/support-vector-machine) | Support Vector Machine |
 | [Machine Learning Basics](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/machine-learning-basics) | Machine Learning Basics |
+| [Neural Network, part one](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/artificial-neural-network) | Artificial Neural Network |
 
 ## Intention
 
@@ -32,4 +33,4 @@ This repo is built to learn Basic Machine Learning using provided [syllabus](htt
 
 ## Special Thanks
 
-Thanks to [Lintasarta Digital School](https://lintasartadigischool.dicoding.com) for giving me free token to learn this the course.
+Thanks to [Lintasarta Digital School](https://lintasartadigischool.dicoding.com) for giving me free token to learn this course.
