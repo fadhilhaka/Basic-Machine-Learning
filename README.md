@@ -26,6 +26,7 @@
 | [Support Vector Machine](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/support-vector-machine) | Support Vector Machine |
 | [Machine Learning Basics](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/machine-learning-basics) | Machine Learning Basics |
 | [Neural Network, part one](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/artificial-neural-network) | Artificial Neural Network |
+| [Neural Network, part two](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/multi-layer-perceptron) | Multi Layer Perceptron |
 
 ## Intention
 
