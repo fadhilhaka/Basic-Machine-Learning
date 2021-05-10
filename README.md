@@ -32,6 +32,7 @@
 | [Keras](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/keras) | Keras Library |
 | [Deployment dan Feedback](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/deployment-and-feedback) | Deployment and Feedback |
 | [Adjustment dan Re-learning](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/adjustment-and-relearning) | Adjustment and Re-learning |
+| [Latihan Membuat Model](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/latihan-membuat-model) | Latihan Membuat Model di Watson Studio |
 
 ## Intention
 
