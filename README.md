@@ -28,7 +28,8 @@
 | [Neural Network, part one](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/artificial-neural-network) | Artificial Neural Network |
 | [Neural Network, part two](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/multi-layer-perceptron) | Multi Layer Perceptron |
 | [Neural Network, part three](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/convolutional-neural-network) | Convolutional Neural Network |
-| [Tensor Flow](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/tensor-flow) | Tensor Flow |
+| [Tensor Flow](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/tensor-flow) | Intro to Tensor Flow |
+| [Keras](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/keras) | Keras Library |
 
 ## Intention
 
