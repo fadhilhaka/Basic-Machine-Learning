@@ -30,6 +30,7 @@
 | [Neural Network, part three](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/convolutional-neural-network) | Convolutional Neural Network |
 | [Tensor Flow](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/tensor-flow) | Intro to Tensor Flow |
 | [Keras](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/keras) | Keras Library |
+| [Deployment dan Feedback](https://github.com/fadhilhaka/Basic-Machine-Learning/tree/main/keras) | Deployment dan Feedback |
 
 ## Intention
 
